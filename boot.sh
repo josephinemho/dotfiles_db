@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-git clone git@github.com:josephinemho/dotfiles.git
+git clone https://github.com/josephinemho/dotfiles.git
 cd dotfiles
 ./bash_load.sh
 cd
