@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-chmod +x bash_load.sh
+sudo chmod +x bash_load.sh
 ./bash_load.sh
 curl -sSL https://get.docker.com | sh
 sudo systemctl start docker
