@@ -7,7 +7,7 @@ sudo yum update -y
 sudo yum install -y figlet 
 
 # Install LinuxBrew
-sudo yum groupinstall -y 'Development Tools' && sudo yum install curl file git
+sudo yum groupinstall -y 'Development Tools' && sudo yum install -y curl file git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
 
