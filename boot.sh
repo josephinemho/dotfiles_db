@@ -5,5 +5,5 @@ curl -sSL https://get.docker.com | sh
 sudo systemctl start docker
 sudo docker pull josephinemho/custom_dockerfile
 sudo usermod -aG docker jmho
-sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+sudo yum update
 sudo yum install figlet
