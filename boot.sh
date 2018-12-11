@@ -9,7 +9,10 @@ sudo yum install -y figlet
 # Install LinuxBrew
 sudo yum groupinstall -y 'Development Tools' && sudo yum install -y curl file git
 echo | sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/bash_profile
+echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/bash_profile
+echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/bash_profile.
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Install Git Large File Storage
 sudo brew install git-lfs -y 
