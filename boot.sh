@@ -6,4 +6,4 @@ sudo systemctl start docker
 sudo docker pull josephinemho/custom_dockerfile
 sudo usermod -aG docker jmho
 sudo yum update
-sudo yum install figlet
+sudo yum install -y figlet 
