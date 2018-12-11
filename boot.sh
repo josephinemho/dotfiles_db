@@ -13,6 +13,7 @@ echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/bash_profile
 echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/bash_profile
 echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/bash_profile.
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+source ~/.bash_profile
 
 # Install Git Large File Storage
 sudo brew install git-lfs -y 
