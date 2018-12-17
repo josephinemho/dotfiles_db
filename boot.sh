@@ -26,7 +26,3 @@ sudo usermod -aG docker jmho
 cd
 sudo git clone https://github.jpl.nasa.gov/jmho/xmatters.git
 
-# Use Git Large File Storage for .csv and .tar files
-cd xmatters
-git lfs track "data/ps_files/*"
-git lfs track "data/picked_data/*"
