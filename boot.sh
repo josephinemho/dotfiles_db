@@ -5,6 +5,7 @@ sudo chmod +x bash_load.sh
 ./bash_load.sh
 sudo yum update -y
 sudo yum install -y figlet 
+sudo cp dotfiles/alligator2.flf /usr/share/figlet/alligator2.flf
 
 # Install LinuxBrew
 sudo yum groupinstall -y 'Development Tools' && sudo yum install -y curl file git
