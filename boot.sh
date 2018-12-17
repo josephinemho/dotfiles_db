@@ -15,9 +15,6 @@ echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.ba
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 source ~/.bash_profile
 
-# Install Git Large File Storage
-sudo brew install git-lfs -y 
-
 # Install Docker
 curl -sSL https://get.docker.com | sh
 sudo systemctl start docker
