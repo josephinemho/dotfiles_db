@@ -18,9 +18,9 @@ sudo cp dotfiles/alligator2.flf /usr/share/figlet/alligator2.flf
 
 # Install Docker
 curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker jmho
 sudo systemctl start docker
 sudo docker pull josephinemho/custom_dockerfile
-sudo usermod -aG docker jmho
 
 # Set up datascience environment
 # Clone datascience repo
