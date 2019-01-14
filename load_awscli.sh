@@ -13,7 +13,7 @@ cd Access-Key-Generation/
 sudo sed -i 's/#!python/#!\/usr\/bin\/python/' aws-login*.py
 ./aws-login-gov.py
 mkdir -p /home/jmho/work/xmatters/original_data
-aws --profile saml-gov s3 sync s3://jmho/xmatters/original_data/ /home/jmho/work/xmatters/original_data/
+aws --profile saml-gov s3 sync s3://jmho/xmatters/original_data/ /home/jmho/work/data/
 #mkdir -p /root/data
 #aws --profile saml-gov s3 sync s3://jmho/xmatters /root/data
 cd ~
