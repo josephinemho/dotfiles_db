@@ -16,3 +16,4 @@ sudo mkdir -p /home/jmho/work/xmatters/original_data
 aws --profile saml-gov s3 sync s3://jmho/xmatters/original_data/ /home/jmho/work/xmatters/original_data/
 #mkdir -p /root/data
 #aws --profile saml-gov s3 sync s3://jmho/xmatters /root/data
+cd ~
