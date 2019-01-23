@@ -12,7 +12,9 @@ sudo git clone https://github.jpl.nasa.gov/cloud/Access-Key-Generation.git
 cd Access-Key-Generation/
 sudo sed -i 's/#!python/#!\/usr\/bin\/python/' aws-login*.py
 ./aws-login-gov.py
-aws --profile saml-gov s3 sync s3://jmho/xmatters/original_data/ /home/jmho/work/data/
+mkdir -p /home/jmho/work/data
+aws --profile saml-gov s3 sync s3://jmho/xmatters/webhosting_data/ /home/jmho/work/data/
+# For demo
 #mkdir -p /root/data
 #aws --profile saml-gov s3 sync s3://jmho/xmatters /root/data
 cd ~
