@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 
+# Use zsh instead of vimrc
+#cp sources/vimrc ~/.vimrc
+#source ~/.vimrc
+
 cp sources/bash_profile ~/.bash_profile
-cp sources/vimrc ~/.vimrc
 sudo cp sources/motd.sh /etc/profile.d/
-source ~/.bash_profile ~/etc/profile.d ~/.vimrc
+source ~/.bash_profile ~/etc/profile.d
+
 sudo yum update -y
-sudo yum install -y tmux
-sudo yum install -y figlet
+sudo yum install -y tmux figlet
 sudo cp sources/alligator2.flf /usr/share/figlet/alligator2.flf
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo "/usr/bin/zsh" | sudo tee -a /etc/shells
+chsh -s $(which zsh)
