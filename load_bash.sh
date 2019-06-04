@@ -4,8 +4,9 @@
 #cp sources/vimrc ~/.vimrc
 #source ~/.vimrc
 
-cp sources/bash_profile ~/.bash_profile
+sudo cp sources/bash_profile ~/.bash_profile
 sudo cp sources/motd.sh /etc/profile.d/
+sudo cp sources/zshrc ~/.zshrc
 source ~/.bash_profile ~/etc/profile.d
 
 sudo yum update -y
