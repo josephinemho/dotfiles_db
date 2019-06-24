@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #sudo curl -sSL https://get.docker.com | sh
-sudo yum install docker
+sudo yum -y install docker
 sudo usermod -aG docker jmho
 sudo systemctl start docker
 #sudo docker pull josephinemho/custom_dockerfile
