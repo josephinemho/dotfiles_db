@@ -30,8 +30,6 @@ cat << "EOF"
      \/     \/          \/    \/              \/     \/     \/ 
 EOF
 
-figlet -f alligator2 H E L L O
-
 echo -e "
 $Y Welcome to $HOSTNAME!
 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~

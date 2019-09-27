@@ -12,7 +12,3 @@ sudo cp sources/bash_profile ~/.bash_profile
 sudo cp sources/motd.sh /etc/profile.d/motd.sh
 sudo cp sources/zshrc ~/.zshrc
 source ~/.bash_profile ~/etc/profile.d ~/.zshrc
-
-sudo yum update -y
-sudo yum install -y tmux figlet
-sudo cp sources/alligator2.flf /usr/share/figlet/alligator2.flf
