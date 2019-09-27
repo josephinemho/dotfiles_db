@@ -10,6 +10,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Copy source files to locations
 sudo cp sources/vimrc ~/.vimrc
 sudo cp sources/bash_profile ~/.bash_profile
-sudo cp sources/motd.sh /etc/profile.d/motd.sh
+sudo cp sources/motd.sh /etc/motd.d/
 sudo cp sources/zshrc ~/.zshrc
-source ~/.bash_profile ~/etc/profile.d ~/.zshrc
+source ~/.bash_profile ~/etc/motd.d ~/.zshrc
