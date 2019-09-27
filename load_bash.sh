@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Install zsh
-sudo yum update -y && sudo yum -y install zsh
+#sudo yum update -y && sudo yum -y install zsh
+sudo yum -y install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y 
 # Clone the zsh-syntax-highlighting plugin’s repo and copy it to the “Oh My ZSH” plugins directory.
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
