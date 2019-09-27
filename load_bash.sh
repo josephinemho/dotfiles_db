@@ -12,4 +12,4 @@ sudo cp sources/vimrc ~/.vimrc
 sudo cp sources/bash_profile ~/.bash_profile
 sudo cp sources/motd.sh /etc/motd.d/
 sudo cp sources/zshrc ~/.zshrc
-source ~/.bash_profile ~/etc/motd.d ~/.zshrc
+source ~/.bash_profile ~/etc/profile.d ~/.zshrc
